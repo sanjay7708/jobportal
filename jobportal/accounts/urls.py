@@ -7,5 +7,5 @@ urlpatterns=[
     path('logout/',LogoutView.as_view(),name='logout'),
     path('signup/',SignupView.as_view(),name='signup'),
     path('api/token/refresh/',TokenRefreshView.as_view(),name='refresh'),
-
+ 
 ]

@@ -25,7 +25,7 @@ class LoginApiTest(APITestCase):
 
         response = self.client.post(self.login_url, data)
 
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.status_code, status.HTTP_102_PROCESSING) #sameple
         self.assertEqual(response.data['message'], "login sucessfully")
 
     def test_login_failed(self):
